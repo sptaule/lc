@@ -1,0 +1,146 @@
+<html>
+    <head>
+        <title>Lucas Chaplain - À propos</title>
+        <meta charset="utf-8">
+        <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Wire+One&family=Sawarabi+Mincho&family=Encode+Sans+SC:wdth,wght@104.5,425&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/ressources/styles/app.css">
+        <link rel="stylesheet" href="/ressources/styles/main.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="/ressources/scripts/jquery.lettering.js"></script>
+        <script src="/ressources/scripts/glitch.js"></script>
+    </head>
+    <body id="about" class="overflow-x-hidden">
+
+        <div id="scroll-menu" class="hidden fixed top-0 z-50 w-full bg-sptlblack py-1">
+            <ul class="flex flex-row justify-around max-w-5xl mx-auto text-3xl font-thin text-white" style="font-family: 'Wire One', sans-serif;">
+                <li class="hover:text-sptlred transform duration-300 origin-top-left hover:scale-95">
+                    <a href="./index.html" class="nav-link tracking-wide">◣</a>
+                </li>
+                <li class="hover:text-sptlred transform duration-300 origin-center hover:scale-95">
+                    <span class="pr-2">◢</span>
+                    <a href="./services.html" class="nav-link tracking-wider font-semibold">Services</a>
+                </li>
+                <li class="hover:text-sptlred transform duration-300 origin-center hover:scale-95">
+                    <span class="pr-2">◢</span>
+                    <a href="./creations.html" class="nav-link tracking-wider font-semibold">Créations</a>
+                </li>
+                <li class="hover:text-sptlred transform duration-300 origin-center hover:scale-95">
+                    <span class="pr-2">◢</span>
+                    <a href="./about.html" class="nav-link tracking-wider font-semibold">À propos</a>
+                </li>
+                <li class="hover:text-sptlred transform duration-300 origin-center hover:scale-95">
+                    <span class="pr-2">◢</span>
+                    <a href="./contact.html" class="nav-link tracking-wider font-semibold">Contact</a>
+                </li>
+                <li class="flex flex-row items-center justify-center space-x-2">
+                    <a target="_blank" href="https://github.com/sptaule" title="GitHub">
+                        <img src="/ressources/images/github-icon.svg" alt="" class="transform duration-200 hover:scale-110 rounded-lg p-0.5 inline-block h-8 w-8 shadow">
+                    </a>
+                    <a target="_blank" href="https://api.whatsapp.com/send?phone=+33651424136" title="WhatsApp">
+                        <img src="/ressources/images/whatsapp.svg" alt="" class="transform duration-200 hover:scale-110 rounded-lg p-0.5 inline-block h-8 w-8 shadow">
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="relative" style="height: 100vh;">
+
+            <header>
+                <div id="side-menu" class="fixed mix-blend-screen px-2 left-0 top-1/2 transform -translate-y-1/2">
+                    <ul class="text-4xl font-thin text-white" style="font-family: 'Wire One', sans-serif;">
+                        <li class="hover:text-sptlred transform duration-300 origin-top-left hover:scale-95">
+                            <a href="./index.html" id="home-link" class="nav-link tracking-wide">◣</a>
+                        </li>
+                        <li>
+                            <span class="pr-2">◢</span>
+                            <a href="./services.html" id="services-link" class="nav-link tracking-wider font-semibold">Services</a>
+                        </li>
+                        <li>
+                            <span class="pr-2">◢</span>
+                            <a href="./creations.html" id="creations-link" class="nav-link tracking-wider font-semibold">Créations</a>
+                        </li>
+                        <li>
+                            <span class="pr-2">◢</span>
+                            <a href="./about.html" id="about-link" class="nav-link tracking-wider font-semibold">À propos</a>
+                        </li>
+                        <li>
+                            <span class="pr-2">◢</span>
+                            <a href="./contact.html" id="contact-link" class="nav-link tracking-wider font-semibold">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="fixed flex flex-col justify-center items-center space-y-1 px-2 right-0 top-1/2 transform -translate-y-1/2">
+                    <a id="github-link" class="external-link relative" target="_blank" href="https://github.com/sptaule">
+                        <span class="absolute right-12 top-1/2 transform -translate-y-1/2 hidden text-gray-100">GitHub</span>
+                        <img src="/ressources/images/github-icon.svg" alt="" class="transform duration-200 hover:scale-110 rounded-lg p-0.5 inline-block h-10 w-10 shadow">
+                    </a>
+                    <a id="whatsapp-link" class="external-link relative" target="_blank" href="https://api.whatsapp.com/send?phone=+33651424136">
+                        <span class="absolute right-12 top-1/2 transform -translate-y-1/2 hidden text-gray-100">WhatsApp</span>
+                        <img src="/ressources/images/whatsapp.svg" alt="" class="transform duration-200 hover:scale-110 rounded-lg p-0.5 inline-block h-10 w-10 shadow">
+                    </a>
+                </div>
+            </header>
+
+            <main id="pagecontent" class="min-h-screen max-w-5xl mx-auto hidden">
+
+                <div id="page-info" class="p-5 my-6">
+                    <p class="tracking-wider text-white text-5xl z-50 text-center" style="font-family: 'Wire One', cursive;" href="/">
+                        <span id="page-title" class="text-gray-100 leading-5 text-6xl">à propos</span>
+                    </p>
+                    <p class="text-center mt-10">
+                        <i class="arrow down text-4xl text-gray-100"></i>
+                    </p>
+                </div>
+
+                <div class="flex flex-row items-center">
+                    <div style="font-family: 'Sawarabi Mincho', sans-serif;" class="text-xl tracking-wider text-sptlblack font-semibold space-y-12 bg-gray-100 p-10 rounded my-auto">
+                        <p>
+                            Je m’appelle Lucas et j’exerce ma passion :<br><span class="text-sptlred">je réalise des sites web selon vos besoins</span>.
+                        </p>
+                        <p>
+                            Je vis à Belvédère, une commune à 1h de Nice, dans un petit chalet confectionné par mon entourage et moi-même.
+                            L’air de la nature est au quotidien un véritable plus. Je dirais même pour moi que c’est nécessaire.
+                            Je suis conquis par les paysages majestueux, la verdure, et la forêt à quelques pas.
+                        </p>
+                        <hr class="bg-sptlblack bg-opacity-10 h-0.5">
+                        <p>
+                            Je suis quelqu’un de méticuleux.<br>
+                            Mon souhait est de vous apporter <span class="text-sptlred">un réel service</span> et votre <span class="text-sptlred">satisfaction</span> est ce qui prime par-dessus tout.  
+                        </p>
+                        <p>
+                            Je souhaite vous proposer un service de qualité, en pratiquant des tarifs adaptés à vos ambitions et votre budget.<br>
+                            Il est primordial que nous puissions élaborer vos idées les plus folles et les mettre en place.<br>
+                            Sachez que tout est réalisable, rien n'est un frein pour la créativité !  
+                        </p>
+                        <p>
+                            Le développement de votre projet me tient d'avance <span class="text-sptlred">particulièrement à cœur</span>.<br>
+                            Mon objectif est que vous soyez pleinement satisfait de mon accompagnement.<br>
+                            J'assure une réactivité et une grande disponibilité à vos requêtes.
+                        </p>
+                    </div>
+        
+                    <div class="w-full transform -translate-x-5 translate-y-5 space-y-4">
+                        <img class="shadow-xl object-cover rounded" src="/ressources/images/me.png" alt="">
+                        <img class="shadow-xl object-cover rounded" src="/ressources/images/josiane.png" alt="">
+                        <img class="shadow-xl object-cover rounded" src="/ressources/images/nature.png" alt="">
+                    </div>
+                </div>
+
+                <footer class="h-16 flex flex-col items-center justify-center w-full bg-white">
+                    <h1>🄯 Lucas Chaplain</h1>
+                    <span>2021</span>
+                </footer>
+    
+            </main>
+            
+        </div>
+
+        <script src="/ressources/scripts/nav.js"></script>
+        <script src="/ressources/scripts/transitions.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,64 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+  background: transparent;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    background: url("../images/original-jellyfish.jpg") no-repeat;
+    background-size: 50% cover;
+    background-attachment: fixed;
+}
+
+canvas {
+	width: 100vw;
+  height: 100vh;
+}
+
+.transition-fade {
+  transition: 0.4s;
+  opacity: 1;
+}
+
+html.is-animating .transition-fade {
+  opacity: 0;
+}
+
+.arrow {
+  border-width: 0 6px 6px 0;
+  display: inline-block;
+  padding: 6px;
+  border-radius: 3px;
+}
+
+.arrow-small {
+  border-width: 0 4px 4px 0;
+  display: inline-block;
+  padding: 4px;
+  border-radius: 2px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}

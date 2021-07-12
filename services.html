@@ -1,0 +1,242 @@
+<html>
+    <head>
+        <title>Lucas Chaplain - Services</title>
+        <meta charset="utf-8">
+        <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Wire+One&family=Sawarabi+Mincho&family=Encode+Sans+SC:wdth,wght@104.5,425&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/ressources/styles/app.css">
+        <link rel="stylesheet" href="/ressources/styles/main.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="/ressources/scripts/jquery.lettering.js"></script>
+        <script src="/ressources/scripts/glitch.js"></script>
+    </head>
+    <body id="services" class="overflow-x-hidden">
+
+        <div id="scroll-menu" class="hidden fixed top-0 z-50 w-full bg-sptlblack py-1">
+            <ul class="flex flex-row justify-around max-w-5xl mx-auto text-3xl font-thin text-white" style="font-family: 'Wire One', sans-serif;">
+                <li class="hover:text-sptlred transform duration-300 origin-top-left hover:scale-95">
+                    <a href="./index.html" class="nav-link tracking-wide">◣</a>
+                </li>
+                <li class="hover:text-sptlred transform duration-300 origin-center hover:scale-95">
+                    <span class="pr-2">◢</span>
+                    <a href="./services.html" class="nav-link tracking-wider font-semibold">Services</a>
+                </li>
+                <li class="hover:text-sptlred transform duration-300 origin-center hover:scale-95">
+                    <span class="pr-2">◢</span>
+                    <a href="./creations.html" class="nav-link tracking-wider font-semibold">Créations</a>
+                </li>
+                <li class="hover:text-sptlred transform duration-300 origin-center hover:scale-95">
+                    <span class="pr-2">◢</span>
+                    <a href="./about.html" class="nav-link tracking-wider font-semibold">À propos</a>
+                </li>
+                <li class="hover:text-sptlred transform duration-300 origin-center hover:scale-95">
+                    <span class="pr-2">◢</span>
+                    <a href="./contact.html" class="nav-link tracking-wider font-semibold">Contact</a>
+                </li>
+                <li class="flex flex-row items-center justify-center space-x-2">
+                    <a target="_blank" href="https://github.com/sptaule" title="GitHub">
+                        <img src="/ressources/images/github-icon.svg" alt="" class="transform duration-200 hover:scale-110 rounded-lg p-0.5 inline-block h-8 w-8 shadow">
+                    </a>
+                    <a target="_blank" href="https://api.whatsapp.com/send?phone=+33651424136" title="WhatsApp">
+                        <img src="/ressources/images/whatsapp.svg" alt="" class="transform duration-200 hover:scale-110 rounded-lg p-0.5 inline-block h-8 w-8 shadow">
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="relative" style="height: 100vh;">
+
+            <header>
+                <div id="side-menu" class="fixed mix-blend-screen px-2 left-0 top-1/2 transform -translate-y-1/2">
+                    <ul class="text-4xl font-thin text-white" style="font-family: 'Wire One', sans-serif;">
+                        <li class="hover:text-sptlred transform duration-300 origin-top-left hover:scale-95">
+                            <a href="./index.html" id="home-link" class="nav-link tracking-wide">◣</a>
+                        </li>
+                        <li>
+                            <span class="pr-2">◢</span>
+                            <a href="./services.html" id="services-link" class="nav-link tracking-wider font-semibold">Services</a>
+                        </li>
+                        <li>
+                            <span class="pr-2">◢</span>
+                            <a href="./creations.html" id="creations-link" class="nav-link tracking-wider font-semibold">Créations</a>
+                        </li>
+                        <li>
+                            <span class="pr-2">◢</span>
+                            <a href="./about.html" id="about-link" class="nav-link tracking-wider font-semibold">À propos</a>
+                        </li>
+                        <li>
+                            <span class="pr-2">◢</span>
+                            <a href="./contact.html" id="contact-link" class="nav-link tracking-wider font-semibold">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="external-links-menu" class="fixed flex flex-col justify-center items-center space-y-1 px-2 right-0 top-1/2 transform -translate-y-1/2">
+                    <a id="github-link" class="external-link relative" target="_blank" href="https://github.com/sptaule">
+                        <span class="absolute right-12 top-1/2 transform -translate-y-1/2 hidden text-gray-100">GitHub</span>
+                        <img src="/ressources/images/github-icon.svg" alt="" class="transform duration-200 hover:scale-110 rounded-lg p-0.5 inline-block h-10 w-10 shadow">
+                    </a>
+                    <a id="whatsapp-link" class="external-link relative" target="_blank" href="https://api.whatsapp.com/send?phone=+33651424136">
+                        <span class="absolute right-12 top-1/2 transform -translate-y-1/2 hidden text-gray-100">WhatsApp</span>
+                        <img src="/ressources/images/whatsapp.svg" alt="" class="transform duration-200 hover:scale-110 rounded-lg p-0.5 inline-block h-10 w-10 shadow">
+                    </a>
+                </div>
+            </header>
+
+            <main id="pagecontent" class="min-h-screen max-w-5xl mx-auto hidden">
+
+                <div id="page-info" class="p-5 my-6">
+                    <p class="tracking-wider text-white text-5xl z-50 text-center" style="font-family: 'Wire One', cursive;" href="/">
+                        <span id="page-title" class="text-gray-100 leading-5 text-6xl">services</span>
+                    </p>
+                    <p class="text-center mt-10">
+                        <i class="arrow down text-4xl text-gray-100"></i>
+                    </p>
+                </div>
+
+                <div class="flex flex-col items-center space-y-10">
+                    
+                    <div style="font-family: 'Sawarabi Mincho', sans-serif;" class="max-w-4xl w-full text-xl tracking-wider text-sptlblack font-semibold space-y-8 bg-gray-100 p-10 rounded my-auto border-l-8 border-sptlblack">
+                        <p>
+                            Il est important d'avoir une présence sur internet.
+                        </p>
+                        <p>
+                            Vous est-il déjà arrivé de ne pas trouver les horaires d'un magasin,<br>
+                            de ne pas avoir accès aux annonces importantes d'un commerce,<br>
+                            ou bien d'atterir sur un site et de ne même pas savoir de quoi il s'agit ?<br>
+                            c'est parfois ennuyant !
+                        </p>
+                        <p>
+                            Je réalise des sites web pour les petites et moyennes entreprises, associations, clubs, etc.
+                        </p>
+                        <p>
+                            Il peut s'agir :
+                            <ul class="space-y-3">
+                                <li>- d'un <a href="#site-vitrine-section" class="text-sptlred border-b border-transparent hover:border-sptlred transition-all duration-200">site vitrine</a> qui a pour but de vous présenter ou bien de présenter votre activité.</li>
+                                <li>- d'un <a href="#site-fonctionnel-section" class="text-sptlred border-b border-transparent hover:border-sptlred transition-all duration-200">site fonctionnel</a> relatif à l'activité de l'entreprise permettant de gérer un ensemble d'utilisateurs, en leur mettant à disposition des services.</li>
+                                <li>- d'un <a href="#site-ecommerce-section" class="text-sptlred border-b border-transparent hover:border-sptlred transition-all duration-200">site ecommerce</a> pour promouvoir vos produits et les mettre à la vente.</li>
+                            </ul>
+                        </p>
+                    </div>
+
+                    <div id="site-vitrine-section" style="font-family: 'Sawarabi Mincho', sans-serif;" class="w-full text-xl tracking-wider text-sptlblack font-semibold space-y-12 bg-gray-100 p-10 rounded my-auto border-l-8 border-sptlred">
+                        <h2 class="text-sptlred text-2xl">Le site vitrine</h2>
+                        <p>
+                            Il vous présente ou bien présente votre activité, vos services.
+                        </p>
+                        <p>
+                            Qui que vous soyez, peu importe la nature de votre activité, il est vivement recommandé d'être visible sur internet.<br>
+                        </p>
+                        <p class="bg-sptlred bg-opacity-20 px-6 py-4 rounded">
+                            Comptez un mimimum de 500€ pour un site vitrine.
+                        </p>
+                        <div class="extra-info space-y-3">
+                            <button onclick="toggleBlock('site-vitrine-info', 'site-vitrine-arrow')" class="flex flex-row items-center justify-center space-x-2 text-yellow-500">
+                                <span class="border-b border-yellow-200 hover:border-yellow-500 duration-200">En savoir plus</span>
+                                <i id="site-vitrine-arrow" class="arrow-small down border-yellow-500"></i>
+                            </button>
+                            <div id="site-vitrine-info" class="hidden bg-yellow-100 shadow-sm p-4 rounded space-y-2">
+                                <span class="text-yellow-600">La prestation comprend généralement les points suivants :</span>
+                                <ul class="space-y-1 text-lg">
+                                    <li>- 15 pages maximum</li>
+                                    <li>- Charte graphique personnalisée</li>
+                                    <li>- Site responsive : optimisé pour les différents supports (PC, tablettes, smartphones)</li>
+                                    <li>- Indexation et optimisation de votre site sur les moteurs de recherche</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="site-fonctionnel-section" style="font-family: 'Sawarabi Mincho', sans-serif;" class="w-full text-xl tracking-wider text-sptlblack font-semibold space-y-12 bg-gray-100 p-10 rounded my-auto border-l-8 border-sptlred">
+                        <h2 class="text-sptlred text-2xl">Le site fonctionnel</h2>
+                        <p>
+                            Si vous souhaitez mettre en relation vos utilisateurs ou bien leur proposer des services,<br>
+                            c'est le type de site qu'il vous faut.
+                        </p>
+                        <p>
+                            Des exemples de sites fonctionnels connus et largement utilisés : <i>Facebook</i>, <i>Leboncoin</i>, <i>Airbnb</i>...
+                        </p>
+                        <p class="bg-sptlred bg-opacity-20 px-6 py-4 rounded">
+                            Comptez un mimimum de 1000€ pour un site fonctionnel.
+                        </p>
+                        <div class="extra-info space-y-3">
+                            <button onclick="toggleBlock('site-fonctionnel-info', 'site-fonctionnel-arrow')" class="flex flex-row items-center justify-center space-x-2 text-yellow-500">
+                                <span class="border-b border-yellow-200 hover:border-yellow-500 duration-200">En savoir plus</span>
+                                <i id="site-fonctionnel-arrow" class="arrow-small down border-yellow-500"></i>
+                            </button>
+                            <div id="site-fonctionnel-info" class="hidden bg-yellow-100 shadow-sm p-4 rounded space-y-2">
+                                <span class="text-yellow-600">La prestation comprend généralement les points suivants :</span>
+                                <ul class="space-y-1 text-lg">
+                                    <li>- Nombre de pages illimité</li>
+                                    <li>- Charte graphique personnalisée</li>
+                                    <li>- Site responsive : optimisé pour les différents supports (PC, tablettes, smartphones)</li>
+                                    <li>- Indexation et optimisation de votre site sur les moteurs de recherche</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="site-ecommerce-section" style="font-family: 'Sawarabi Mincho', sans-serif;" class="w-full text-xl tracking-wider text-sptlblack font-semibold space-y-12 bg-gray-100 p-10 rounded my-auto border-l-8 border-sptlred">
+                        <h2 class="text-sptlred text-2xl">Le site ecommerce</h2>
+                        <p>
+                            Vous voulez vendre vos produits ou services ?<br>
+                            Vous avez déjà une boutique physique et vous souhaitez également être sur internet ?<br>
+                            Ce dont vous avez besoin est un site ecommerce.
+                        </p>
+                        <p>
+                            Le principe est simple et vous le connaissez sûrement :<br>
+                            un catalogue de produits/services, un panier, puis la validation de la commande.
+                        </p>
+                        <p class="bg-sptlred bg-opacity-20 px-6 py-4 rounded">
+                            Comptez un mimimum de 1500€ pour un site ecommerce.
+                        </p>
+                        <div class="extra-info space-y-3">
+                            <button onclick="toggleBlock('site-ecommerce-info', 'site-ecommerce-arrow')" class="flex flex-row items-center justify-center space-x-2 text-yellow-500">
+                                <span class="border-b border-yellow-200 hover:border-yellow-500 duration-200">En savoir plus</span>
+                                <i id="site-ecommerce-arrow" class="arrow-small down border-yellow-500"></i>
+                            </button>
+                            <div id="site-ecommerce-info" class="hidden bg-yellow-100 shadow-sm p-4 rounded space-y-2">
+                                <span class="text-yellow-600">La prestation comprend généralement les points suivants :</span>
+                                <ul class="space-y-1 text-lg">
+                                    <li>- Nombre de pages illimité</li>
+                                    <li>- Charte graphique personnalisée</li>
+                                    <li>- Variations de produits</li>
+                                    <li>- Système de paiement</li>
+                                    <li>- Suivi des commandes</li>
+                                    <li>- Gestion du site (administration)</li>
+                                    <li>- Formation (vidéo) sur la partie administration</li>
+                                    <li>- Site responsive : optimisé pour les différents supports (PC, tablettes, smartphones)</li>
+                                    <li>- Indexation et optimisation de votre site sur les moteurs de recherche</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="font-family: 'Sawarabi Mincho', sans-serif;" class="max-w-4xl w-full text-xl tracking-wider text-sptlblack font-semibold space-y-8 bg-gray-100 p-10 rounded my-auto border-l-8 border-sptlblack">
+                        <p class="text-center">
+                            Vous vous posez des questions ou vous êtes prêt(e) à franchir le pas ?<br>
+                            <a class="inline-block text-sptlred border-b border-transparent hover:border-sptlred transition-all duration-200 mt-4" href="/contact.html">
+                                Contactez-moi
+                            </a>
+                        </p>
+                    </div>
+
+                </div>
+
+                <footer class="mt-8 h-16 flex flex-col items-center justify-center w-full bg-white">
+                    <h1>🄯 Lucas Chaplain</h1>
+                    <span>2021</span>
+                </footer>
+    
+            </main>
+            
+        </div>
+
+        <script src="/ressources/scripts/pages/services.js"></script>
+        <script src="/ressources/scripts/nav.js"></script>
+        <script src="/ressources/scripts/transitions.js"></script>
+
+    </body>
+</html>

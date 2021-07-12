@@ -1,0 +1,220 @@
+<html>
+    <head>
+        <title>Lucas Chaplain - Services</title>
+        <meta charset="utf-8">
+        <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Wire+One&family=Sawarabi+Mincho&family=Encode+Sans+SC:wdth,wght@104.5,425&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/ressources/styles/app.css">
+        <link rel="stylesheet" href="/ressources/styles/main.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="/ressources/scripts/jquery.lettering.js"></script>
+        <script src="/ressources/scripts/glitch.js"></script>
+    </head>
+    <body id="services" class="overflow-x-hidden">
+
+        <div id="scroll-menu" class="hidden fixed top-0 z-50 w-full bg-sptlblack py-1">
+            <ul class="flex flex-row justify-around max-w-5xl mx-auto text-3xl font-thin text-white" style="font-family: 'Wire One', sans-serif;">
+                <li class="hover:text-sptlred transform duration-300 origin-top-left hover:scale-95">
+                    <a href="./index.html" class="nav-link tracking-wide">◣</a>
+                </li>
+                <li class="hover:text-sptlred transform duration-300 origin-center hover:scale-95">
+                    <span class="pr-2">◢</span>
+                    <a href="./services.html" class="nav-link tracking-wider font-semibold">Services</a>
+                </li>
+                <li class="hover:text-sptlred transform duration-300 origin-center hover:scale-95">
+                    <span class="pr-2">◢</span>
+                    <a href="./creations.html" class="nav-link tracking-wider font-semibold">Créations</a>
+                </li>
+                <li class="hover:text-sptlred transform duration-300 origin-center hover:scale-95">
+                    <span class="pr-2">◢</span>
+                    <a href="./about.html" class="nav-link tracking-wider font-semibold">À propos</a>
+                </li>
+                <li class="hover:text-sptlred transform duration-300 origin-center hover:scale-95">
+                    <span class="pr-2">◢</span>
+                    <a href="./contact.html" class="nav-link tracking-wider font-semibold">Contact</a>
+                </li>
+                <li class="flex flex-row items-center justify-center space-x-2">
+                    <a target="_blank" href="https://github.com/sptaule" title="GitHub">
+                        <img src="/ressources/images/github-icon.svg" alt="" class="transform duration-200 hover:scale-110 rounded-lg p-0.5 inline-block h-8 w-8 shadow">
+                    </a>
+                    <a target="_blank" href="https://api.whatsapp.com/send?phone=+33651424136" title="WhatsApp">
+                        <img src="/ressources/images/whatsapp.svg" alt="" class="transform duration-200 hover:scale-110 rounded-lg p-0.5 inline-block h-8 w-8 shadow">
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="relative" style="height: 100vh;">
+
+            <header>
+                <div id="side-menu" class="fixed mix-blend-screen px-2 left-0 top-1/2 transform -translate-y-1/2">
+                    <ul class="text-4xl font-thin text-white" style="font-family: 'Wire One', sans-serif;">
+                        <li class="hover:text-sptlred transform duration-300 origin-top-left hover:scale-95">
+                            <a href="./index.html" id="home-link" class="nav-link tracking-wide">◣</a>
+                        </li>
+                        <li>
+                            <span class="pr-2">◢</span>
+                            <a href="./services.html" id="services-link" class="nav-link tracking-wider font-semibold">Services</a>
+                        </li>
+                        <li>
+                            <span class="pr-2">◢</span>
+                            <a href="./creations.html" id="creations-link" class="nav-link tracking-wider font-semibold">Créations</a>
+                        </li>
+                        <li>
+                            <span class="pr-2">◢</span>
+                            <a href="./about.html" id="about-link" class="nav-link tracking-wider font-semibold">À propos</a>
+                        </li>
+                        <li>
+                            <span class="pr-2">◢</span>
+                            <a href="./contact.html" id="contact-link" class="nav-link tracking-wider font-semibold">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="external-links-menu" class="fixed flex flex-col justify-center items-center space-y-1 px-2 right-0 top-1/2 transform -translate-y-1/2">
+                    <a id="github-link" class="external-link relative" target="_blank" href="https://github.com/sptaule">
+                        <span class="absolute right-12 top-1/2 transform -translate-y-1/2 hidden text-gray-100">GitHub</span>
+                        <img src="/ressources/images/github-icon.svg" alt="" class="transform duration-200 hover:scale-110 rounded-lg p-0.5 inline-block h-10 w-10 shadow">
+                    </a>
+                    <a id="whatsapp-link" class="external-link relative" target="_blank" href="https://api.whatsapp.com/send?phone=+33651424136">
+                        <span class="absolute right-12 top-1/2 transform -translate-y-1/2 hidden text-gray-100">WhatsApp</span>
+                        <img src="/ressources/images/whatsapp.svg" alt="" class="transform duration-200 hover:scale-110 rounded-lg p-0.5 inline-block h-10 w-10 shadow">
+                    </a>
+                </div>
+            </header>
+
+            <main id="pagecontent" class="min-h-screen max-w-5xl mx-auto hidden">
+
+                <div id="page-info" class="p-5 my-6">
+                    <p class="tracking-wider text-white text-5xl z-50 text-center" style="font-family: 'Wire One', cursive;" href="/">
+                        <span id="page-title" class="text-gray-100 leading-5 text-6xl">créations</span>
+                    </p>
+                    <p class="text-center mt-10">
+                        <i class="arrow down text-4xl text-gray-100"></i>
+                    </p>
+                </div>
+
+                <div class="flex flex-col items-center space-y-10">
+                    
+                    <div style="font-family: 'Sawarabi Mincho', sans-serif;" class="max-w-5xl w-full text-xl tracking-wider text-sptlblack font-semibold space-y-8 bg-gray-100 p-10 rounded my-auto border-l-8 border-sptlblack">
+                        
+                        <ul class="flex flexs-row items-center justify-around space-x-2">
+                            <li class="cursor-pointer bg-sptlblack bg-opacity-10 w-full flex items-center justify-center border-b-2 border-sptlblack border-opacity-20 hover:border-sptlred rounded-sm" data-filter="1">Sites web</li>
+                            <li class="cursor-pointer bg-sptlblack bg-opacity-10 w-full flex items-center justify-center border-b-2 border-sptlblack border-opacity-20 hover:border-sptlred rounded-sm" data-filter="2">Logos</li>
+                            <li class="cursor-pointer bg-sptlblack bg-opacity-10 w-full flex items-center justify-center border-b-2 border-sptlblack border-opacity-20 hover:border-sptlred rounded-sm" data-filter="3">Autres</li>
+                          </ul>
+                        
+                        <div class="filter-container">
+
+                            <div class="filtr-item w-1/2 px-8 py-10 relative" data-category="1" data-name="nausicaa-plongee">
+                                <img class="rounded object-cover shadow-2xl" src="/ressources/images/creations/sites/nausicaaplongee.jpg" alt="Nausicaa Plongée" />
+                                <div class="hidden absolute bottom-1 left-1/2 transform -translate-x-1/2 bg-sptlblack bg-opacity-95 rounded-sm shadow text-gray-200 h-auto w-3/4">
+                                    <div class="flex flex-col items-center justify-center">
+                                        <span class="text-sm italic text-yellow-400 pt-1 font-thin">site web</span>
+                                        <a target="_blank" href="https://nausicaa-plongee.com/" class="text-lg transform duration-200 hover:translate-y-1">Nausicaa Plongée</a>
+                                        <p class="px-4 py-2 italic text-sm text-center">Club associatif de plongée sous-marine à Villefranche-sur-Mer (06)</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="filtr-item w-1/2 px-8 py-10 relative" data-category="1" data-name="gemme-la-pierre">
+                                <img class="rounded object-cover shadow-2xl" src="/ressources/images/creations/sites/gemmelapierre.jpg" alt="Gemme La Pierre" />
+                                <div class="hidden absolute bottom-1 left-1/2 transform -translate-x-1/2 bg-sptlblack bg-opacity-95 rounded-sm shadow text-gray-200 h-auto w-3/4">
+                                    <div class="flex flex-col items-center justify-center">
+                                        <span class="text-sm italic text-yellow-400 pt-1 font-thin">site web</span>
+                                        <a target="_blank" href="https://www.gemmelapierre.com/" class="text-lg transform duration-200 hover:translate-y-1">Gemme La Pierre</a>
+                                        <p class="px-4 py-2 italic text-sm text-center">Vente de bijoux et pierres fines, fabrication française</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="filtr-item w-1/2 px-8 py-10 relative" data-category="1" data-name="creations-medusees">
+                                <img class="rounded object-cover shadow-2xl" src="/ressources/images/creations/sites/creationsmedusees.jpg" alt="Créations Médusées" />
+                                <div class="hidden absolute bottom-1 left-1/2 transform -translate-x-1/2 bg-sptlblack bg-opacity-95 rounded-sm shadow text-gray-200 h-auto w-3/4">
+                                    <div class="flex flex-col items-center justify-center">
+                                        <span class="text-sm italic text-yellow-400 pt-1 font-thin">site web</span>
+                                        <a target="_blank" href="https://www.creations-medusees.com/" class="text-lg transform duration-200 hover:translate-y-1">Créations Médusées</a>
+                                        <p class="px-4 py-2 italic text-sm text-center">Vente d'articles zéro déchet pour la cuisine, salle de bain, etc.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="filtr-item w-1/2 px-8 py-10 relative" data-category="1" data-name="florence-vigner">
+                                <img class="rounded object-cover shadow-2xl" src="/ressources/images/creations/sites/florencevigner.jpg" alt="Florence Vigner" />
+                                <div class="hidden absolute bottom-1 left-1/2 transform -translate-x-1/2 bg-sptlblack bg-opacity-95 rounded-sm shadow text-gray-200 h-auto w-3/4">
+                                    <div class="flex flex-col items-center justify-center">
+                                        <span class="text-sm italic text-yellow-400 pt-1 font-thin">site web</span>
+                                        <a target="_blank" href="https://www.florencevigner.fr/" class="text-lg transform duration-200 hover:translate-y-1">Florence Vigner</a>
+                                        <p class="px-4 py-2 italic text-sm text-center">Conseils individuels en naturopathie, Chi Nei Tsang, réflexologie plantaire</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="filtr-item w-1/2 px-8 py-10 relative" data-category="1" data-name="gig-event">
+                                <img class="rounded object-cover shadow-2xl" src="/ressources/images/creations/sites/gigevent.jpg" alt="Gig Event" />
+                                <div class="hidden absolute bottom-1 left-1/2 transform -translate-x-1/2 bg-sptlblack bg-opacity-95 rounded-sm shadow text-gray-200 h-auto w-3/4">
+                                    <div class="flex flex-col items-center justify-center">
+                                        <span class="text-sm italic text-yellow-400 pt-1 font-thin">site web</span>
+                                        <a target="_blank" href="https://www.gigevent.fr/" class="text-lg transform duration-200 hover:translate-y-1">Gig Event</a>
+                                        <p class="px-4 py-2 italic text-sm text-center">Association d'organisation d'évènements, concert, expositions, ect.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="filtr-item w-1/2 px-8 py-10 relative" data-category="2" data-name="garage">
+                                <img class="rounded object-cover shadow-2xl" src="/ressources/images/creations/logos/garage.jpg" alt="Garage" />
+                                <div class="hidden absolute bottom-1 left-1/2 transform -translate-x-1/2 bg-sptlblack bg-opacity-95 rounded-sm shadow text-gray-200 h-auto w-3/4">
+                                    <div class="flex flex-col items-center justify-center">
+                                        <span class="text-sm italic text-yellow-400 pt-1 font-thin">logo</span>
+                                        <a target="_blank" href="https://git.deuxfleurs.fr/Deuxfleurs/garage" class="text-lg transform duration-200 hover:translate-y-1">Garage</a>
+                                        <p class="px-4 py-2 italic text-sm text-center">Stockage de données léger, performant et géo-distribué</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="filtr-item w-1/2 px-8 py-10 relative" data-category="3" data-name="lowfi">
+                                <img class="rounded object-cover shadow-2xl" src="/ressources/images/creations/autres/lowfi.jpg" alt="Lowfi" />
+                                <div class="hidden absolute bottom-1 left-1/2 transform -translate-x-1/2 bg-sptlblack bg-opacity-95 rounded-sm shadow text-gray-200 h-auto w-3/4">
+                                    <div class="flex flex-col items-center justify-center">
+                                        <span class="text-sm italic text-yellow-400 pt-1 font-thin">autre</span>
+                                        <a target="_blank" href="#!" class="text-lg transform duration-200 hover:translate-y-1">Lowfi</a>
+                                        <p class="px-4 py-2 italic text-sm text-center">Police d'écriture</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="filtr-item w-1/2 px-8 py-10 relative" data-category="2" data-name="z--adopte-un-piaf">
+                                <img class="rounded object-cover shadow-2xl" src="/ressources/images/creations/logos/adopteunpiaf.jpg" alt="Adopte Un Piaf" />
+                                <div class="hidden absolute bottom-1 left-1/2 transform -translate-x-1/2 bg-sptlblack bg-opacity-95 rounded-sm shadow text-gray-200 h-auto w-3/4">
+                                    <div class="flex flex-col items-center justify-center">
+                                        <span class="text-sm italic text-yellow-400 pt-1 font-thin">logo</span>
+                                        <a target="_blank" href="https://adopteunpiaf.com/" class="text-lg transform duration-200 hover:translate-y-1">AdopteUnPiaf</a>
+                                        <p class="px-4 py-2 italic text-sm text-center">Vente en ligne de piafs uniques en céramique et raku</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <footer class="h-16 flex flex-col items-center justify-center w-full bg-white">
+                    <h1>🄯 Lucas Chaplain</h1>
+                    <span>2021</span>
+                </footer>
+    
+            </main>
+            
+        </div>
+
+        <script src="/ressources/scripts/nav.js"></script>
+        <script src="/ressources/scripts/transitions.js"></script>
+        <script src="/ressources/scripts/jquery.filterizr.min.js"></script>
+        <script src="/ressources/scripts/pages/creations.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,18 @@
+{
+  "name": "lucaschaplain",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "postcss ressources/styles/tailwind.css -o ressources/styles/main.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@swup/slide-theme": "^1.0.5",
+    "autoprefixer": "^10.2.6",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.2.4"
+  }
+}
