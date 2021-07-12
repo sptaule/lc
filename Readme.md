@@ -4,5 +4,5 @@ Nothing really interesting here, just the source code of my personal website
 
 I wanted it to be simple but elegant, no cheese.
 - TailwindCSS used for style classes
-- ThreeJS only for the homepage animation
+- ThreeJS for the homepage animation only
 - Both vanilla and jQuery used for beauty (just a sip)
